@@ -1,6 +1,10 @@
 # Node.js
 - task: Npm@1
   inputs:
+    command: 'custom'
+    customCommand: 'run build'
+- task: Npm@1
+  inputs:
     command: 'install'
     workingDir: '/'
 # Build a general Node.js project with npm.
