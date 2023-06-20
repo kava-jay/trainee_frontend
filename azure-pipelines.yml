@@ -1,4 +1,8 @@
 # Node.js
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'run build'
 - task: Docker@2
   inputs:
     command: 'buildAndPush'
